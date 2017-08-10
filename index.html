@@ -55,9 +55,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -67,6 +67,66 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-string" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/10/string/" class="article-date">
+  <time datetime="2017-08-10T05:23:05.000Z" itemprop="datePublished">2017-08-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/10/string/">string</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h1><p>@(String类型)[操作方法|slice|substr|substring]</p>
+<p><strong>String类型</strong>  是字符串的对象包装类型。它的字符串操作方法主要有以下几种：</p>
+<ul>
+<li><strong>concat()</strong> ：用来连接一个或多个字符串，返回的是新字符串，不会改变原字符串；</li>
+<li><strong>slice()</strong> ： 基于子字符串创建新字符串，返回新字符串，也不会该变原字符串</li>
+<li><strong>substr()</strong> ：同第二个；</li>
+<li><strong>substring()</strong> ：同第二个。</li>
+</ul>
+<hr>
+<h2 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h2><h3 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str1=<span class="string">"hello "</span>;</div><div class="line"><span class="keyword">var</span> str2=str1.concat(<span class="string">'jkt'</span>);     <span class="comment">// 一般还是用+里连接字符串</span></div><div class="line">alert(str2);         <span class="comment">// 'hello jkt'</span></div><div class="line">alert(str1);         <span class="comment">// 'hello '</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>虽然可以通过concat()方法来专门的拼接任意字符串，但我们平时使用更多的还是加号操作符（+）。</p>
+</blockquote>
+<h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><blockquote>
+<p>该方法可以接受一个或两个参数，第一个参数指定字符串开始的位置，第二个参数指定到哪里结束。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.slice(<span class="number">3</span>));     <span class="comment">//'lo world!'</span></div><div class="line">alert(string.slice(<span class="number">3</span>,<span class="number">7</span>));   <span class="comment">//'lo w'  从位置3截取到位置7，不包括位置7上的值</span></div><div class="line">alert(string.slice(<span class="number">-3</span>));    <span class="comment">//'ld!' 将负值与字符串长度(12)相加=9,所以从位置9开始取</span></div><div class="line">alert(string.slice(<span class="number">3</span>,<span class="number">-4</span>));  <span class="comment">//'lo wo'   将第二个参数转为8（-4+12）</span></div></pre></td></tr></table></figure>
+<h3 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h3><blockquote>
+<p>该方法也可以接受一个或两个参数，但是第一个参数指定字符串开始的位置，第二个参数指定截取几个。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.substr(<span class="number">3</span>));        <span class="comment">//'lo world!'</span></div><div class="line">alert(string.substr(<span class="number">3</span>,<span class="number">7</span>));      <span class="comment">// 'lo worl' 从位置3开始截取7个</span></div><div class="line">alert(string.substr(<span class="number">-3</span>));       <span class="comment">//'ld!' 将负的第一个参数与字符串长度(12)相加=9,所以从位置9开始截取</span></div><div class="line">alert(string.substr(<span class="number">3</span>,<span class="number">-4</span>));     <span class="comment">//'' 第二个负的参数转为0,从位置3处截取0个长度,所以是空字符串</span></div></pre></td></tr></table></figure>
+<h3 id="substring"><a href="#substring" class="headerlink" title="substring()"></a>substring()</h3><blockquote>
+<p>该方法也可以接受一个或两个参数，第一个参数指定字符串开始的位置，第二个参数指定结束位置。</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.substring(<span class="number">3</span>));      <span class="comment">//'lo world!'</span></div><div class="line">alert(string.substring(<span class="number">3</span>，<span class="number">7</span>));   <span class="comment">//'lo w'  从位置3截取到位置7，不包括位置7上的值</span></div><div class="line">alert(string.substring(<span class="number">-3</span>));     <span class="comment">//'hello world!'  substring()会将第一个负参数值转换为0</span></div><div class="line">alert(string.substring(<span class="number">3</span>,<span class="number">-4</span>));   <span class="comment">//'hel'将第二个负参数值转为0得到 (3,0)但这个方法会将较小的值作为开始位置，所以得到(0,3)</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/10/string/" data-id="cj6601gbv00020cndeauws3x9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-数组和字符串的操作方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -111,7 +171,7 @@ alert(val);                     //class,html
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/14/数组和字符串的操作方法/" data-id="cj5oyom1x0002mcndw7zfmxgz" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/07/14/数组和字符串的操作方法/" data-id="cj6601gc100030cndsk4rhs4e" class="article-share-link">Share</a>
       
       
     </footer>
@@ -148,7 +208,7 @@ alert(val);                     //class,html
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/ajax全接触/" data-id="cj5oyom1t0001mcnd4fp1kw83" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/07/06/ajax全接触/" data-id="cj6601gbi00000cndg7rodmec" class="article-share-link">Share</a>
       
       
     </footer>
@@ -193,7 +253,7 @@ alert(val);                     //class,html
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj5oyom1l0000mcnd6dyt2hfj" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj6601gbq00010cndg6rphvi2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -220,7 +280,7 @@ alert(val);                     //class,html
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li></ul>
     </div>
   </div>
 
@@ -228,9 +288,13 @@ alert(val);                     //class,html
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/08/10/string/">string</a>
+          </li>
         
           <li>
             <a href="/2017/07/14/数组和字符串的操作方法/">数组和字符串的操作方法</a>
@@ -257,7 +321,7 @@ alert(val);                     //class,html
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 JiaJiating<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
