@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JiaJiating.Blog</title>
+  <title>JSON | JiaJiating.Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JiaJiating.Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="JSON@(语法)[方法|stringify|parse|toJSON]  JSON  是JavaScript的一个严格的子集，利用JavaScript中的一些模式来表示结构化数据。JSON    只是一种数据格式，不是一种编程语言。很多编程语言都有针对JSON的解析器和序列化器。  语法 简单值 ：使用与javascript相同的语法，可以在JSON中表示字符串、数值、布尔值和null。但JSO">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JSON">
+<meta property="og:url" content="http://yoursite.com/2017/08/11/JSON/index.html">
 <meta property="og:site_name" content="JiaJiating.Blog">
-<meta property="og:description" content="前端">
+<meta property="og:description" content="JSON@(语法)[方法|stringify|parse|toJSON]  JSON  是JavaScript的一个严格的子集，利用JavaScript中的一些模式来表示结构化数据。JSON    只是一种数据格式，不是一种编程语言。很多编程语言都有针对JSON的解析器和序列化器。  语法 简单值 ：使用与javascript相同的语法，可以在JSON中表示字符串、数值、布尔值和null。但JSO">
+<meta property="og:updated_time" content="2017-08-11T07:14:14.745Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JiaJiating.Blog">
-<meta name="twitter:description" content="前端">
+<meta name="twitter:title" content="JSON">
+<meta name="twitter:description" content="JSON@(语法)[方法|stringify|parse|toJSON]  JSON  是JavaScript的一个严格的子集，利用JavaScript中的一些模式来表示结构化数据。JSON    只是一种数据格式，不是一种编程语言。很多编程语言都有针对JSON的解析器和序列化器。  语法 简单值 ：使用与javascript相同的语法，可以在JSON中表示字符串、数值、布尔值和null。但JSO">
   
     <link rel="alternate" href="/atom.xml" title="JiaJiating.Blog" type="application/atom+xml">
   
@@ -66,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-JSON" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-JSON" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/11/JSON/" class="article-date">
   <time datetime="2017-08-11T07:13:21.000Z" itemprop="datePublished">2017-08-11</time>
@@ -81,8 +80,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/11/JSON/">JSON</a>
+    <h1 class="article-title" itemprop="name">
+      JSON
     </h1>
   
 
@@ -174,205 +173,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-string" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/08/10/string/" class="article-date">
-  <time datetime="2017-08-10T05:23:05.000Z" itemprop="datePublished">2017-08-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/10/string/">string</a>
-    </h1>
+    <a href="/2017/08/10/string/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">string</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="字符串操作方法"><a href="#字符串操作方法" class="headerlink" title="字符串操作方法"></a>字符串操作方法</h1><p>@(String类型)[操作方法|slice|substr|substring]</p>
-<p><strong>String类型</strong>  是字符串的对象包装类型。它的字符串操作方法主要有以下几种：</p>
-<ul>
-<li><strong>concat()</strong> ：用来连接一个或多个字符串，返回的是新字符串，不会改变原字符串；</li>
-<li><strong>slice()</strong> ： 基于子字符串创建新字符串，返回新字符串，也不会该变原字符串</li>
-<li><strong>substr()</strong> ：同第二个；</li>
-<li><strong>substring()</strong> ：同第二个。</li>
-</ul>
-<hr>
-<h2 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h2><h3 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> str1=<span class="string">"hello "</span>;</div><div class="line"><span class="keyword">var</span> str2=str1.concat(<span class="string">'jkt'</span>);     <span class="comment">// 一般还是用+里连接字符串</span></div><div class="line">alert(str2);         <span class="comment">// 'hello jkt'</span></div><div class="line">alert(str1);         <span class="comment">// 'hello '</span></div></pre></td></tr></table></figure>
-<blockquote>
-<p>虽然可以通过concat()方法来专门的拼接任意字符串，但我们平时使用更多的还是加号操作符（+）。</p>
-</blockquote>
-<h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><blockquote>
-<p>该方法可以接受一个或两个参数，第一个参数指定字符串开始的位置，第二个参数指定到哪里结束。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.slice(<span class="number">3</span>));     <span class="comment">//'lo world!'</span></div><div class="line">alert(string.slice(<span class="number">3</span>,<span class="number">7</span>));   <span class="comment">//'lo w'  从位置3截取到位置7，不包括位置7上的值</span></div><div class="line">alert(string.slice(<span class="number">-3</span>));    <span class="comment">//'ld!' 将负值与字符串长度(12)相加=9,所以从位置9开始取</span></div><div class="line">alert(string.slice(<span class="number">3</span>,<span class="number">-4</span>));  <span class="comment">//'lo wo'   将第二个参数转为8（-4+12）</span></div></pre></td></tr></table></figure>
-<h3 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h3><blockquote>
-<p>该方法也可以接受一个或两个参数，但是第一个参数指定字符串开始的位置，第二个参数指定截取几个。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.substr(<span class="number">3</span>));        <span class="comment">//'lo world!'</span></div><div class="line">alert(string.substr(<span class="number">3</span>,<span class="number">7</span>));      <span class="comment">// 'lo worl' 从位置3开始截取7个</span></div><div class="line">alert(string.substr(<span class="number">-3</span>));       <span class="comment">//'ld!' 将负的第一个参数与字符串长度(12)相加=9,所以从位置9开始截取</span></div><div class="line">alert(string.substr(<span class="number">3</span>,<span class="number">-4</span>));     <span class="comment">//'' 第二个负的参数转为0,从位置3处截取0个长度,所以是空字符串</span></div></pre></td></tr></table></figure>
-<h3 id="substring"><a href="#substring" class="headerlink" title="substring()"></a>substring()</h3><blockquote>
-<p>该方法也可以接受一个或两个参数，第一个参数指定字符串开始的位置，第二个参数指定结束位置。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> string=<span class="string">"hello world!"</span>;</div><div class="line">alert(string.substring(<span class="number">3</span>));      <span class="comment">//'lo world!'</span></div><div class="line">alert(string.substring(<span class="number">3</span>，<span class="number">7</span>));   <span class="comment">//'lo w'  从位置3截取到位置7，不包括位置7上的值</span></div><div class="line">alert(string.substring(<span class="number">-3</span>));     <span class="comment">//'hello world!'  substring()会将第一个负参数值转换为0</span></div><div class="line">alert(string.substring(<span class="number">3</span>,<span class="number">-4</span>));   <span class="comment">//'hel'将第二个负参数值转为0得到 (3,0)但这个方法会将较小的值作为开始位置，所以得到(0,3)</span></div></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/10/string/" data-id="cj67jem5e0004p0nd2uk2xp1p" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-数组和字符串的操作方法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/14/数组和字符串的操作方法/" class="article-date">
-  <time datetime="2017-07-14T09:18:09.000Z" itemprop="datePublished">2017-07-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/14/数组和字符串的操作方法/">数组和字符串的操作方法</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>字符串<br>属性：length<br>     str=’javascript’;<br>     alert(str.length);             //8<br>方法：<br>indexOf();字符第一次出现的位置检索<br>str=’javascript’;<br>alert(str.indexOf(‘s’));        //4<br>lastIndexOf(); 字符最后一次出现位置检索<br>     str=’javascript’;<br>     alert(str.lastIndexOf(‘a’));    //2 最后一个a出现的位置<br>substr(0,5);字符串截取,从位置0截取到位置5=substring（0,5）<br>substring（1，5）：从1开始到5结束<br>substr(1,5) :从1开始取5个<br>     str=’/web/home/inex.php’;<br>     alert(str.substr(1,3));     //web<br>     综合例子：截取路径中的目录部分<br>          str=’/web/home/inex.php’;<br>pos=str.lastIndexOf(‘/‘);<br>dir=str.substr(0,pos);<br>alert(dir);                  /// web/home<br>截取文件部分<br>str=’/web/home/inex.php’;<br>pos=str.lastIndexOf(‘/‘);<br>file=str.substr(pos+1);                   //第二个不写，默认截取到最后一个<br>alert(file);                       //index.php<br>      截取文件.后的后缀部分<br>        方法一：<br>        str=’/web/home/inex.php’;<br>pos=str.lastIndexOf(‘.’);<br>ext=str.substr(pos+1);<br>alert(ext);                    //php<br>方法二：<br>file=’inex.class.html.php’;<br>// 用.分割成四个数组<br>arr=file.split(‘.’);<br>l=arr.length;<br>// 取数组最后一个值即可<br>alert(arr[l-1]);<br>          取数组最后一个值还有另外的方法：<br>          val=arr.pop();<br>          alert(val);               //php</p>
-<pre><code>val=arr.slice(3);  //直接取第三个
-alert(val);             //php
-
- arr2=arr.slice(-1);  //直接取第三个
-</code></pre><p>alert(arr2);             //php<br>alert(typeof(arr2));       //object<br>截取的结果还是数组，所以此处slice属于数组截取，要想截取到的是字符串<br>          alert(arr2[0]);        //截取的是字符串php</p>
-<pre><code>file=&apos;inex.class.html.php&apos;;
-alert(file.slice(5,10));  //class 此处slice是字符串截取
-
-val=arr.slice(1,3);  //从1开始，截取到3但不包括第三个
-alert(val);                     //class,html
-</code></pre><p>slice(start,end);  从哪开始到哪结束不包括最后一个位置<br>split(reg);  把字符串分隔成数组（也支持正则分割）<br>     str=’2017-7-14’;<br>     arr=str.split(‘-‘);<br>     alert(arr);               // 2017,7,14<br>search(reg); 字符串查找<br>str=’/web/home/index.php’;<br>pos=str.search(‘home’);                 // pos=str.indexOf(‘home’);有一样的效果<br>alert(pos);                                     // 5</p>
-<p>str=’/web/home/index.php’;<br>pos=str.search(/Home/i);      //正则   ，忽略大小写<br>alert(pos);<br>match(reg); 字符串匹配，返回的是数组<br>str=’/web/home/index.home.php’;<br>arr=str.match(/home/g);      //正则表达式 ，g全部匹配<br>alert(arr);                             //home,home</p>
-<p>str=’/web/home/index.HOME.php’;<br>arr=str.match(/home/ig);      //正则表达式<br>alert(arr);                              //home,HOME<br>replace(reg,’str’); 字符串替换，不动原来的值只改变新值<br>str=’/web/home/index.HOME.php’;<br>str.replace(‘HOME’,’home’);<br>alert(str);                    //    /web/home/index.HOME.php</p>
-<p>str=’/web/home/index.HOME.php’;<br>str2=str.replace(‘HOME’,’home’);<br>alert(str2);                  //    /web/home/index.home.php</p>
-<p>str=’/web/home/index.HOME.php’;<br>str2=str.replace(/HOME/ig,’jkt’);<br>alert(str2);                   //    /web/jkt/index.jkt.php</p>
-<p>数组<br>属性：<br>        length<br>方法：<br>join(“/“);  把数组连成字符串<br>     arr=[‘jkt’,’20’,’西安邮电大学’];<br>     alert(arr.join(‘-‘));    //弹出字符串：jkt-20-西安邮电大学<br>pop()  把数组最后一个值弹出来（删除） 原数组少了一个值<br>push()  给数组最后插入一个值    原数组多了一个值<br>shift()   从数组最前面弹出一个值    原数组少了一个值<br>unshift() 从数组最前面插入一个值     原数组多了一个值<br>上面四个方法改变了原数组<br>reverse()  翻转<br>    arr=[‘linux’,’html’,’css’,’php’];     //原数组没变<br>    arr2=arr.reverse();<br>    alert(arr2);               //  php,css,html,linux<br>concat()  连接（合并）数组<br>   arr=[‘linux’,’html’];<br>   arr2=[‘css’,’php’];<br>   arr3=arr.concat(arr2);<br>   alert(arr3);<br>slice(start,end)  从哪开始到哪结束不包括最后一个位置<br>sort(show)  排序，只针对数字排序<br>show(a,b){<br>return a-b;  //正序<br>//return b-a;  //倒序<br>splice()</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/14/数组和字符串的操作方法/" data-id="cj67jem4p0002p0nde7j0f1wi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ajax全接触" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/06/ajax全接触/" class="article-date">
-  <time datetime="2017-07-06T13:00:38.000Z" itemprop="datePublished">2017-07-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/06/ajax全接触/">ajax全接触</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>你好，这是一篇博客</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/ajax全接触/" data-id="cj67jem4r0003p0ndu3uxo5j4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/06/hello-world/" class="article-date">
-  <time datetime="2017-07-06T07:41:53.130Z" itemprop="datePublished">2017-07-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/06/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj67jem4k0001p0nd6rb6z4zi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
