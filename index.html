@@ -68,6 +68,43 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-一些常见算法的js实现2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/02/一些常见算法的js实现2/" class="article-date">
+  <time datetime="2017-10-02T05:36:14.000Z" itemprop="datePublished">2017-10-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/02/一些常见算法的js实现2/">一些常见算法的js实现2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="javascript两个栈实现一个队列"><a href="#javascript两个栈实现一个队列" class="headerlink" title="javascript两个栈实现一个队列"></a>javascript两个栈实现一个队列</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><h3 id="入队：将元素进栈1"><a href="#入队：将元素进栈1" class="headerlink" title="入队：将元素进栈1;"></a>入队：将元素进栈1;</h3><h3 id="出队：判断栈2是否为空，如果为空，则将栈1中所有元素pop-并push进栈2-栈2出栈-如果不为空，栈２直接出栈。"><a href="#出队：判断栈2是否为空，如果为空，则将栈1中所有元素pop-并push进栈2-栈2出栈-如果不为空，栈２直接出栈。" class="headerlink" title="出队：判断栈2是否为空，如果为空，则将栈1中所有元素pop,并push进栈2,栈2出栈;如果不为空，栈２直接出栈。"></a>出队：判断栈2是否为空，如果为空，则将栈1中所有元素pop,并push进栈2,栈2出栈;如果不为空，栈２直接出栈。</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> stack1=[];</div><div class="line"><span class="keyword">var</span> stack2=[];</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">queue</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">    <span class="keyword">return</span> stack1.push(value);</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">unqueue</span>(<span class="params">value</span>)</span>&#123;</div><div class="line">    <span class="keyword">if</span>(stack2.length==<span class="number">0</span>)&#123;</div><div class="line">        <span class="keyword">while</span>(!stack1.length==<span class="number">0</span>)&#123;</div><div class="line">            stack2.push(stack1.pop());</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> stack2.pop();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/02/一些常见算法的js实现2/" data-id="cj89qvxfi00054wndzyj2i73j" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-一些常见算法的js实现" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/01/一些常见算法的js实现/" class="article-date">
@@ -115,7 +152,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/01/一些常见算法的js实现/" data-id="cj88u7hfu0005o0ndljyr0t16" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/01/一些常见算法的js实现/" data-id="cj89qvxfg00044wndad62i7m6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -152,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/09/06/TCP-IP协议/" data-id="cj88u7hfn0002o0ndk3ui3jqx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/09/06/TCP-IP协议/" data-id="cj89qvxev00004wndmg0k0t8x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -262,7 +299,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/11/JSON/" data-id="cj88u7hfc0000o0nd8sir8kdx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/11/JSON/" data-id="cj89qvxgf00064wndrl5dqkhs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -322,7 +359,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/10/string/" data-id="cj88u7hfq0003o0nd4lhl7407" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/10/string/" data-id="cj89qvxf800014wnd2g6lqxte" class="article-share-link">Share</a>
       
       
     </footer>
@@ -375,7 +412,7 @@ alert(val);                     //class,html
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/14/数组和字符串的操作方法/" data-id="cj88u7hfs0004o0ndet2d2w4i" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/14/数组和字符串的操作方法/" data-id="cj89qvxfe00034wndpn8i8udo" class="article-share-link">Share</a>
       
       
     </footer>
@@ -420,7 +457,7 @@ alert(val);                     //class,html
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj88u7hfk0001o0nd84cv3rtn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/07/06/hello-world/" data-id="cj89qvxfb00024wndzb68nrml" class="article-share-link">Share</a>
       
       
     </footer>
@@ -460,6 +497,10 @@ alert(val);                     //class,html
       <ul>
         
           <li>
+            <a href="/2017/10/02/一些常见算法的js实现2/">一些常见算法的js实现2</a>
+          </li>
+        
+          <li>
             <a href="/2017/10/01/一些常见算法的js实现/">一些常见算法的js实现</a>
           </li>
         
@@ -473,10 +514,6 @@ alert(val);                     //class,html
         
           <li>
             <a href="/2017/08/10/string/">string</a>
-          </li>
-        
-          <li>
-            <a href="/2017/07/14/数组和字符串的操作方法/">数组和字符串的操作方法</a>
           </li>
         
       </ul>
